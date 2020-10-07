@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* GLOBAL COLOURS */
+:root {
+
+    --first-color: white;
+    --second-color: #85BFAE;
+    --third-color: #323232;
+    
+  }
+  
+  html,body {
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .centerContent {
+      align-items: flex-end;
+  }
+  
+  .mainHeading {
+    font-weight: 700;
+    font-size: 36px;
+    width: 597px;
+  }
+
+ #homepageTagLine {
+     font-size: 14px;
+     width: 466px;
+ } 
+
+ #emailButton {
+     background-color: var(--second-color);
+     color: var(--first-color);
+     height: 63px;
+     width: 120px;
+     font-variant: small-caps;
+     text-decoration: none;
+     cursor: pointer;
+ }
