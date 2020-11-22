@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Blinker:wght@300&family=Roboto:wght@100;300;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#homeIcon {
+    width: 50px;
+    position: fixed;
+    right: 0;
+    margin: 30px;
+    bottom: 0;
+}
+
+#AllNoFooter {
+    margin: 0 auto;
+    width: 600px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.titleHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#mainTitle {
+    font-size: 60px;
+    color: #262520;
+    margin: 77px 0px 35px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 41px;
+    color: #989898;
+    margin-top: 0px;
+}
+
+.roles {
+    color: #FFCB11;
+    background: #3b3b3b;
+    padding: 5px;
+}
+
+/* .sectionParts {
+    margin-bottom: 100px;
+} */
+
+.description {
+    margin: 30px 0px;
+}
+
+
+h3 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* .sectionImg {
+    display: flex;
+    flex-direction: row;
+    
+} */
+
+.underlineDiv {
+    margin: 50px 0px;
+    border-bottom: #bfbfbf 1px solid;
+}
+
+.ebookImg {
+    width: 100%;
+}
+
+.VDimglong {
+    width: 55%;
+}
+
+.VDimg {
+    width: 20%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logoTLS {
+    width: 50%;
+}
+
+.merchandise {
+    width: 45%;
+}
+
+#planList {
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.dateCalc {
+    background-color: #FCB11F;
+    padding: 20px;
+}
+
+.dateBreak {
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+#topdate {
+    margin-bottom: 20px;
+}
+
+#bothdateRanges {
+    margin-bottom: 30px;
+}
+
+#moodImg {
+    width: 100%;
+    height: auto;
+}
+
+#iconSketch {
+    width: 100%;
+    height: auto;
+}
+
+#logoSequence {
+    width: 100%;
+}
+
+#UIborder {
+    border-bottom: #bfbfbf 1px solid;
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+#UIImg {
+    display: flex;
+    flex-direction: column;
+}
+
+.UIdesign {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+/* #finalUIImg {
+    display: flex;
+    flex-direction: row;
+} */
+
+#finalUIMob {
+    width: 27%;
+}
+
+#finalUIDesk {
+    width: 67%;
+}
+
+
+footer {
+    background: #262520;
+    height: 100px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin: 0px auto;
+}
+
+.socialMedia {
+    width: 30px;
+    padding-right: 10px;
+}
+
+#footerSocialIcons {
+    flex-direction: row;
+}
+
+#email {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+    #AllNoFooter {
+        width: 80vw;
+    }
+
+    .sample {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    h2, h1 {
+        margin-bottom: 30px;
+    }
+
+    .sample {
+        width: 100%;
+    }
+
+    .social {
+        width: 80vw;
+        margin: 0px auto;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 545px) {
+
+
+    button {
+        width: 100%;
+    }
+
+    .sample {
+        margin-bottom: 45px;
+    }
+
+    .sample a {
+        flex-direction: column;
+    }
+
+    .textSection {
+        margin-left: 0px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 23px;
+        /* width: 100%; */
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+#email {
+    font-size: 15px;
+}
+
+
+}

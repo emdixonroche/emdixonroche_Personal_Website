@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* GLOBAL COLOURS */
+/* GLOBAL CSS */
 :root {
 
     --first-color: white;
     --second-color: #85BFAE;
     --third-color: #323232;
-    
+    --fourth-color: #B7B7B7;
   }
   
   html,body {
       font-family: 'Raleway', sans-serif;
+      margin: auto 0;
+      color: var(--third-color);
   }
 
+  /* HOME PAGE */
+
   .mainContent {
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
+    align-items: flex-start;
   }
 
   .centerContent {
-      align-items: flex-end;
+      /* align-items: flex-end; */
   }
   
   .mainHeading {
@@ -37,12 +39,678 @@
      width: 466px;
  } 
 
+ .emailMe {
+   margin-top: 50px;
+   background-color: var(--second-color);
+   height: 63px;
+   width: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
  #emailButton {
-     background-color: var(--second-color);
      color: var(--first-color);
-     height: 63px;
-     width: 120px;
      font-variant: small-caps;
      text-decoration: none;
      cursor: pointer;
  }
+
+ 
+ 
+ /* MENU */
+
+#menuSection {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.navlist {
+  display: flex;
+}
+
+ .listitem {
+  list-style: none;
+  margin: 0px 20px;
+ }
+
+ .menuItem:hover {
+   color: var(--second-color);
+ } 
+
+ .menuItem {
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 14px;
+   color: var(--third-color);
+ }
+
+ /* MENU RESPONSIVE */
+
+ #hamburgericon {
+   display: none;
+ }
+
+.menuBarResponsive {
+  display: none;
+}
+
+#ResponsiveMenuList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.listitemResponsive {
+  background-color: var(--third-color);
+  padding: 15px 0px;
+  border-bottom: white 1px solid;
+}
+
+.menuItemResponsive {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.listitemResponsive:hover {
+  background-color: var(--second-color);
+}
+
+ /* FOOTER */
+
+ #footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+ }
+
+ #footerEmail {
+   font-size: 11px;
+ }
+
+ #socialIcon {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .socialIconFooter {
+   width: 20px;
+   margin: 0px 5px;
+ }
+
+ #copyright {
+   font-variant: small-caps;
+   color: var(--fourth-color);
+   font-size: 10px;
+ }
+
+ /* PRODUCT PORTFOLIO MAIN PAGE */
+
+ .mainContentProduct {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .productSection {
+   margin-bottom: 150px;
+ }
+
+ .productHeading {
+   margin-bottom: 60px;
+   font-size: 36px;
+ }
+
+ .productExamples {
+   display: flex;
+   flex-direction: row;
+  margin-bottom: 50px;
+ }
+
+ .productIMG {
+   width: 300px;
+   height: 150px;
+ }
+
+ .productMiniDescription {
+   width: 300px;
+   margin-left: 20px;
+   /* line-height: 40px; */
+ }
+
+.roles {
+  font-variant: small-caps;
+  font-size: 18px;
+  margin: 0;
+}
+
+.titleLink {
+  text-decoration: none;
+  color: var(--third-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 40px;
+}
+
+.productTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 40px;
+}
+
+.titleLink:hover {
+  color: var(--second-color);
+}
+
+.productdescription {
+  font-size: 13px;
+  /* line-height: 15px; */
+}
+
+.moreLink {
+  font-size: 13px;
+  color: var(--second-color);
+}
+
+.comingsoonLink {
+  font-size: 13px;
+  color: var(--fourth-color);
+  text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.mainContentAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#AboutContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutText {
+  width: 600px;
+}
+
+.AboutHeading {
+  font-size: 34px;
+}
+
+#headshot {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin: 30px 0px 50px;
+}
+
+#IMGresume {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.download {
+  background-color: var(--first-color);
+  border: 1px solid var(--third-color);
+  height: 63px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ResumeDownload {
+    color: var(--third-color);
+    font-variant: small-caps;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#breakname {
+  display: none;
+}
+
+/* CONTACT PAGE */
+
+#contactContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.contactSection1 {
+  margin: 0px 50px;
+}
+
+#fromContent {
+  align-items: flex-start;
+  width: 450px;
+}
+
+.contactSection2 {
+  
+}
+
+#contactinfo {
+  
+}
+
+.contactHeading {
+  font-size: 36px;
+}
+
+.contactLight {
+  font-size: 36px;
+}
+
+.socialInfo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+#contactbackground {
+  background-color: var(--third-color);
+  color: var(--first-color);
+  justify-content: flex-end;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.formLabel {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--fourth-color);
+}
+
+.inputField {
+  border: none;
+  border-bottom: 1px solid var(--third-color);
+  padding: 5px 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: var(--third-color);
+}
+
+#submitButton {
+  border: 1px solid var(--third-color);
+  background-color: var(--first-color);
+  color: var(--third-color);
+  font-variant: small-caps;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 0px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.infoLight {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* ILLUSTRATION AND DESIGN PAGE */
+
+#mainContentDesign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 235px;
+  height: 235px;
+  /* background-color: red; */
+  margin: 5px 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+#chevronIllustration, #chevronVector, #chevronGraphs, #chevronInfographics, #chevronDesign, #chevronFun {
+ width: 15px;
+ margin-right: 15px;
+}
+
+
+.titleExpandIllustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesIllustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+
+.illustrationTitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illustrationTitle:hover {
+  color: var(--second-color);
+}
+
+.titleExpandVector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesVector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+  
+
+#designContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+
+
+.titleExpandGraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesGraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+
+
+
+.titleExpandInfographics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesInfographics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+
+
+.titleExpandDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+
+
+.titleExpandFun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.imagesFun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+  justify-content: space-evenly;
+  /* width: 600px; */
+}
+
+/* @media only screen and (max-width: 1068px) {
+
+  #menuSection {
+    width: 800px;
+  }
+  
+} */
+
+
+@media only screen and (min-width: 768px) {
+  
+  .menuBarResponsive {
+    display: none !important;
+  }
+
+ 
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  .imagesIllustration {
+    width: 100%;
+  }
+
+  #menuSection {
+    width: 730px;
+  }
+
+  .centerContent {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  #menuBar {
+    display: none;
+  }
+
+  #hamburgericon {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .mainHeading {
+    width: 100%;
+  }
+
+  #contactContent {
+    flex-direction: column;
+  }
+  
+  #fromContent {
+    width: 100%;
+  }
+  
+  .contactHeading {
+    font-size: 30px;
+  }
+
+  .productExamples {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .productMiniDescription {
+    margin: 20px 0px 0px 0px;
+}
+
+.mainContent {
+  margin: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#designContent {
+  /* width: 100%; */
+  align-items: center;
+}
+
+
+  
+}
+
+
+@media only screen and (max-width: 540px) {
+
+  
+
+  .centerContent {
+    width: 80vw;
+  }
+
+  .mainHeading {
+    width: 300px;
+    font-size: 25px;
+  }
+
+  .mainContent {
+    margin: 30px 0px;
+    justify-content: center;
+  }
+
+  #homepageTagLine {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .emailMe {
+    margin-top: 20px;
+    width: 100%;
+  }
+ 
+  #emailButton {
+    font-size: 18px;
+  }
+
+  
+
+.AboutParts {
+  margin: 0px 50px;
+}
+
+.AboutText {
+ width: 100%;
+}
+
+.AboutHeading {
+  font-size: 22px;
+}
+
+#breakname {
+  display: block;
+}
+
+#headshot {
+  height: 200px;
+  width: 100%;
+}
+
+.download {
+  width: 100%;
+}
+
+.ContentProduct {
+  margin: 0px 50px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 300px;
+}
+
+.titleExpandIllustration, .titleExpandVector, .titleExpandGraphs, .titleExpandInfographics, .titleExpandDesign, .titleExpandFun {
+  text-align: center;
+  display: block;
+}
+
+.chevron {
+  display: none;
+}
+
+.thumbnail {
+  margin: 20px 0px;
+}
+
+}

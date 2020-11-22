@@ -26,70 +26,134 @@
     <!-- Navigation -->
     <nav id="menuBar"></nav>
 
-    <section>
+    <img src="images/icons/Hamburger_icon.svg" id="hamburgericon">
 
-        <h1>
-            I'd love to hear from you :)
-        </h1>
+    <nav class="menuBarResponsive">
 
-        <form method="post" action="send_mail.php">
+        <div id="homeMenuResponsive">
+            <ul id="ResponsiveMenuList">
+                
+                <a href="index.html" class="menuItemResponsive">
+                <li class="listitemResponsive">
+                        Eléonore Dixon-Roche
+                    </li>
+                </a>
+                
+                <a href="product_portfolio.html" class="menuItemResponsive">
+                <li class="listitemResponsive">
+                        Product
+                    </li>
+                </a>
+                
+                <a href="creative.html" class="menuItemResponsive">
+                <li class="listitemResponsive">
+                        Creative
+                    </li>
+                </a>
+               
+                <a href="about.html" class="menuItemResponsive">
+                <li class="listitemResponsive">
+                        About
+                    </li>
+                </a>
+                
+                <a href="contact.html" class="menuItemResponsive">
+                <li class="listitemResponsive">
+                        Contact
+                    </li>
+                </a>
+            
+            </ul>
+    
+        </div>
+    
+    </nav>
 
-            <div class="formSection">
+    <div id="contactContent">
 
-                <div class="formInput">
-                    <label class="formLabel" for="your-name">Name</label>
-                    <input class="inputField" type="text" name="yourNameFirst">
-                </div>
+        <section class="contactSection1">
 
-                <div class="formInput">
-                    <label class="formLabel" for="emai">Email</label>
-                    <input class="inputField" type="text" name="yourEmail">
-                </div>
+            <div id="fromContent">
 
-                <div class="formInput">
-                    <label class="formLabel" for="project-description">Message</label>
-                    <textarea class="inputField" name="comments" id="project-description" placeholder=""></textarea>
+                <h1 class="contactHeading">
+                    I'd love to hear from you :)
+                </h1>
+
+                <form method="post" action="send_mail.php">
+
+                    <div class="formSection">
+
+                        <div class="formInput">
+                            <label class="formLabel" for="your-name">name</label>
+                            <input class="inputField" type="text" name="yourNameFirst">
+                        </div>
+
+                        <div class="formInput">
+                            <label class="formLabel" for="emai">email</label>
+                            <input class="inputField" type="text" name="yourEmail">
+                        </div>
+
+                        <div class="formInput">
+                            <label class="formLabel" for="project-description">message</label>
+                            <textarea class="inputField" name="comments" id="project-description"
+                                placeholder=""></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- <button id="submit-button">Submit</button> -->
+                    <input id="submitButton" type="submit" name="submit" value="send">
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="contactSection2">
+
+            <div id="contactinfo">
+
+                <div id="contactbackground">
+
+                    <h1 class="contactLight">
+                        Contact Info.
+                    </h1>
+
+                    <p class="infoLight">
+                        emdixonroche.deisigns@gmail.com
+                    </p>
+
+                    <p class="infoLight">
+                        +1 507 581 3560
+                    </p>
+
+                    <h1 class="contactLight">
+                        Follow me.
+                    </h1>
+
+                    <div>
+                        <img class="socialInfo" src="images/icons/Linkedin_Icon.svg">
+                        <img class="socialInfo" src="images/icons/Dribbble-Icon.svg">
+                    </div>
+
                 </div>
 
             </div>
 
-            <!-- <button id="submit-button">Submit</button> -->
-            <input class="submit-button" type="submit" name="submit" value="Send">
-
-        </form>
-
-    </section>
-
-    <section>
-
-        <h1 class="contactLight">
-            Contact Info.
-        </h1>
-
-        <p class="infoLight">
-            Email me: emdixonroche.deisigns@gmail.com
-        </p>
-
-        <p class="infoLight">
-            Call me: +1 507 581 3560
-        </p>
-
-        <h1 class="contactLight">
-            Follow me.
-        </h1>
-
-        <div>
-            <img src="images/icons/Linkedin-02.svg">
-            <img src="images/icons/Dribbble-Icon-01.svg">
-        </div>
+        </section>
 
 
-    </section>
+
+    </div>
 
 
     <!-- Footer -->
 
     <footer id="footerContent"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
