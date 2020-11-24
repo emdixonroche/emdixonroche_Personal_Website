@@ -3,6 +3,9 @@ $(document).ready(function () {
     $('#menuBar').load('menu.html');
     // $('#menuBarResponsive').load('menu.html');
     $('#footerContent').load('footer.html');
+
+    $('#PortfoliomenuBar').load('Portfoliomenu.html');
+    // $('#menuBarResponsive').load('menu.html');
     
     // Responsive Menu
 
@@ -16,6 +19,36 @@ $(document).ready(function () {
         }
     
     });
+
+
+// STICKY HEADER
+
+
+
+    window.onscroll = function () { 
+        stickyHeader() 
+    }
+
+    let header = $('header');
+    let sticky = header.offset().top;
+
+    function stickyHeader() {
+        if (window.pageYOffset > sticky) {
+            $('#menuBar').addClass('sticky');
+            $('#PortfoliomenuBar').addClass('sticky');
+            $('.responsiveMenuPosition').addClass('sticky');
+            $('.menuBarResponsive').addClass('menuBarResponsiveSticky');
+            $('#PortfoliomenuBar').addClass('shadow');
+            $('#menuBar').addClass('shadow');
+        } else {
+            $('#menuBar').removeClass('sticky');
+            $('#PortfoliomenuBar').removeClass('sticky');
+            $('.responsiveMenuPosition').removeClass('sticky');
+            $('.menuBarResponsive').removeClass('menuBarResponsiveSticky');
+            $('#PortfoliomenuBar').removeClass('shadow');
+            $('#menuBar').removeClass('shadow');
+        }
+    }
 
 
     
@@ -109,6 +142,10 @@ $('.titleExpandFun').click(function(){
     }
 
 });
+
+
+
+
 
 
 });

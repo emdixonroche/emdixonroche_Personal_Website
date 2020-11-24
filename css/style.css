@@ -56,6 +56,10 @@
      cursor: pointer;
  }
 
+ .frontLink {
+   color: var(--second-color);
+ }
+
  
  
  /* MENU */
@@ -63,7 +67,7 @@
 #menuSection {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100vw;
   margin: 0px auto;
 }
 
@@ -87,6 +91,29 @@
    color: var(--third-color);
  }
 
+ .sticky {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  z-index: 99999999;
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+}
+
+.menuBarResponsiveSticky {
+  /* position: fixed;
+  top: 0; */
+  z-index: 99999999;
+  width: 100%;
+}
+
+
+
+.shadow {
+  border-bottom: 1px solid var(--fourth-color);
+  opacity: .9;
+}
+
  /* MENU RESPONSIVE */
 
  #hamburgericon {
@@ -103,6 +130,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 .listitemResponsive {
@@ -129,6 +158,7 @@
   position: relative;
   width: 100%;
   margin-top: 20px;
+  z-index: -1;
  }
 
  #footerEmail {
@@ -212,8 +242,8 @@
 }
 
 .productdescription {
-  font-size: 13px;
-  /* line-height: 15px; */
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .moreLink {
@@ -553,6 +583,148 @@
   
 } */
 
+/* PORTFOLIO PAGES */
+
+#AllNoFooter {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.description {
+  margin: 30px 0px;
+}
+
+.bulletNumberedLists {
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.underlineDiv {
+  margin: 50px 0px;
+  border-bottom: #bfbfbf 1px solid;
+}
+
+#planList {
+  padding-left: 20px;
+  margin-left: 20px;
+  line-height: 30px;
+  list-style: disc;
+}
+
+.numberedList {
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.underlineDivHeading {
+  margin: 0 0 50px;
+  border-bottom: 5px solid var(--second-color);
+  width: 100px;
+}
+
+#bothdateRanges {
+  margin-bottom: 30px;
+}
+
+#topdate {
+  margin-bottom: 20px;
+}
+
+.dateCalc {
+  background-color: #FCB11F;
+  padding: 20px;
+}
+
+.dateBreak {
+  font-size: 30px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.PortfolioImages {
+  margin: 30px auto 0px;
+  width: 900px;
+  /* padding-top: 20px; */
+  /* border-top: 1px solid #e8e8e8; */
+}
+
+.SmallPortfolioImages {
+  margin: 30px auto 0px;
+  /* padding-top: 20px; */
+  /* border-top: 1px solid #e8e8e8; */
+  width: 300px;
+}
+
+.ThreePortfolioImages {
+  margin: 30px auto 20px;
+  width: 32%;
+}
+
+.WidePortfolioImages {
+  margin: 30px auto 20px;
+  width: 63%;
+}
+
+.NarrowPortfolioImages {
+  margin: 30px auto 20px;
+  width: 25%;
+}
+
+.HeadPortfolioImages {
+  width: 900px;
+  padding-bottom: 50px;
+  border-bottom: #bfbfbf 1px solid;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 13px;
+  border-left: 3px solid var(--second-color);
+  padding-left: 10px;
+}
+
+.sectionImg {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.HeadsectionImg {
+  margin-bottom: 50px;
+}
+
+.sectionImgEnd {
+  margin-bottom: 0px;
+}
+
+.printoutImg {
+  width: 48%;
+  /* padding-top: 20px; */
+  /* border-top: 1px solid #e8e8e8; */
+  margin: 30px auto 0px;
+}
+
+.subSubHeading {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 768px) {
   
@@ -560,19 +732,41 @@
     display: none !important;
   }
 
- 
-  
+.sample {
+    width: 70%;
 }
 
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  #AllNoFooter, .PortfolioImages, .HeadPortfolioImages {
+    width: 600px;
+  }
+
+}
+
+ 
+  
+
+
 @media only screen and (max-width: 768px) {
+
+  #AllNoFooter {
+    width: 80vw;
+  }
+
+.PortfolioImages, .HeadPortfolioImages {
+  width: 80vw;
+}
 
   .imagesIllustration {
     width: 100%;
   }
 
-  #menuSection {
+  /* #menuSection {
     width: 730px;
-  }
+  } */
 
   .centerContent {
     display: flex;
@@ -580,14 +774,9 @@
     width: 500px;
   }
 
-  #menuBar {
-    display: none;
-  }
+ 
 
-  #hamburgericon {
-    display: block;
-    margin: 10px auto;
-  }
+  
 
   .mainHeading {
     width: 100%;
@@ -634,7 +823,21 @@
 
 @media only screen and (max-width: 540px) {
 
-  
+  .responsiveMenuPosition {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+  }
+
+  #PortfoliomenuBar, #menuBar {
+    display: none;
+  }
+
+  #hamburgericon {
+    display: flex;
+    margin: 10px auto;
+  }
 
   .centerContent {
     width: 80vw;
@@ -712,5 +915,12 @@
 .thumbnail {
   margin: 20px 0px;
 }
+
+.description, li {
+  font-size: 20px;
+  line-height: 25px;
+  /* width: 100%; */
+}
+
 
 }
