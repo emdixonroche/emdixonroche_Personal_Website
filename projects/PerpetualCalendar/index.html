@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon-03.png">
+    <title>Perpetual Calendar Calculator</title>
+</head>
+
+<body>
+    <header id="titleheaderDESKTOP">
+        <h1 class="title">Perpetual Calendar for <span id="subtitle">Depo-Provera</span></h1>
+        <img id="icon" src="images/Perpetual_calendar_icon-02.svg">
+    </header>
+
+    <header id="titleheaderMOBILE">
+        <h1 class="title">Perpetual Calendar</h1>
+        <h1 class="title" id="subtitle">for Depo-Provera</h1>
+        <img id="icon" src="images/Perpetual_calendar_icon-02.svg">
+    </header>
+
+    <div class="content">
+        <main class="minicontent">
+            <section class="subcontent">
+                <div class="todaysetting">
+                    <h2 class="injectiontitle" id="injectiontitletop">Injection Date</h2>
+                    <input type="text" id="datepicker" class="date" readonly>
+                    <button id="resetbutton" class="resetbuttondisplay">Reset</button>
+                </div>
+            </section>
+
+            <section class="subcontent">
+                <h2 class="injectiontitle">Next Injection Due.</h2>
+                <div class="daterange">
+                    <h4 class="MOBILEdaterange">
+                        <span class="indicator" id="fromindicator">From </span>
+                            <br class="breakdateMOBILE">
+                        <span id="BeginningDate" class="date" class="MOBILEdate"></span>
+                            <br class="breakdateMOBILE">
+                        <span class="indicator" class="MOBILEdate"> To </span>
+                            <br class="breakdateMOBILE">
+                        <span id="EndDate" class="date"></span>
+                    </h4>
+                </div>
+            </section>
+
+            <footer class="footersection">
+                <p id="disclaimer">The calendar claculations are based on the Depo-Provera Contraceptive Injection
+                    Perpetual
+                    Calendar created by Pharmacia & Upjohn Company.</p>
+            </footer>
+        </main>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+    <script src="https://momentjs.com/downloads/moment.js" type="text/javascript"></script>
+    <script src="JS/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
