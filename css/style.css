@@ -242,8 +242,8 @@
 }
 
 .productdescription {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 13px;
+  /* line-height: 25px; */
 }
 
 .moreLink {
