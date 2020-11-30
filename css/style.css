@@ -168,11 +168,13 @@
 
  #footerEmail {
    font-size: 11px;
+   text-align: center;
  }
 
  #socialIcon {
    display: flex;
    flex-direction: row;
+   margin: 20px 0px;
  }
 
  .socialIconFooter {
@@ -183,7 +185,7 @@
  #copyright {
    font-variant: small-caps;
    color: var(--fourth-color);
-   font-size: 10px;
+   font-size: 11px;
  }
 
  /* PRODUCT PORTFOLIO MAIN PAGE */
@@ -624,7 +626,7 @@
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 23px;
   font-weight: bold;
   margin-top: 0px;
@@ -632,7 +634,7 @@ h3 {
 }
 
 .underlineDiv {
-  margin: 50px 0px;
+  margin: 100px 0px;
   border-bottom: #bfbfbf 1px solid;
 }
 
@@ -653,7 +655,7 @@ h3 {
 }
 
 .underlineDivHeading {
-  margin: 0 0 50px;
+  margin: 0 0 100px;
   border-bottom: 5px solid var(--second-color);
   width: 100px;
 }
@@ -791,7 +793,7 @@ h3 {
 }
 
 .HeadsectionImg {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .sectionImgEnd {
