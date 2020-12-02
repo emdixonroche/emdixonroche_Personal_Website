@@ -1,3 +1,29 @@
+function login() {
+    var password = 'portfolio';
+
+    // If user not logged in
+    if(sessionStorage.getItem('loggedIn') != 'true'){
+        // Ask for a password in using a prompt
+        var userPassword = prompt('Please Enter Your Password','');
+        // If password is wrong aka does not match our password then alert that the password was incorrect
+        // and run the login function again
+        if (userPassword != password){
+            alert('Incorrect password');
+            login();
+        }
+    }
+    
+    // If correct password then set log in to true
+    sessionStorage.setItem('loggedIn', 'true');
+}
+
+// if url contains the word Portfolio, then run the login function
+if (window.location.href.indexOf("Portfolio") > -1){
+    login();
+}
+
+
+
 $(document).ready(function () {
 
     $('#menuBar').load('menu.html');
