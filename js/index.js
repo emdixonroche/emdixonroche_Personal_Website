@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $('#menuBar').load('menu.html');
     // $('#menuBarResponsive').load('menu.html');
-    $('#footerContent').load('footer.html');
+    // $('#footerContent').load('footer.html');
 
     $('#PortfoliomenuBar').load('Portfoliomenu.html');
     // $('#menuBarResponsive').load('menu.html');
