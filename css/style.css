@@ -979,7 +979,7 @@ h3 {
 }
 
 #headshot {
-  height: 200px;
+  height: unset;
   width: 100%;
 }
 
