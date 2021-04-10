@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 /* GLOBAL CSS */
 :root {
@@ -64,6 +65,16 @@
  
  
  /* MENU */
+
+ .homeMenuPort {
+   display: flex;
+   flex-direction: row;
+ }
+
+ #portMainMenu {
+   margin-right: 0px;
+   padding-right: 0px;
+ }
 
 #menuSection {
   display: flex;
@@ -242,6 +253,11 @@
   font-weight: 700;
   margin: 0;
   line-height: 40px;
+}
+
+.productTitleLink {
+  text-decoration: none;
+  color: var(--third-color);
 }
 
 .titleLink:hover {
@@ -759,7 +775,6 @@ h3 {
 .Homepagecaptionhead {
   font-size: 15px;
   font-weight: bold;
-  margin: ;
 }
 
 .allGifs {

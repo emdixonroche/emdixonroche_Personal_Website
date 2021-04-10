@@ -30,15 +30,22 @@
 
         <section id="menuSection">
     
-        <div id="homeMenu">
-            <ul>
-                <li class="listitem">
-                    <a href="PortfolioEMDixonRoche.html" class="menuItem">
-                        Eléonore Dixon-Roche
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div id="homeMenu" class="homeMenuPort">
+                <ul >
+                    <li class="listitem">
+                        <a href="index.html" class="menuItem">
+                            Eléonore Dixon-Roche
+                        </a>
+                    </li>
+                </ul>
+                <ul  id="portMainMenu">
+                    <li class="listitem">
+                        <a href="PortfolioEMDixonRoche.html" class="menuItem">
+                            Portfolio Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
     
         <div id="mainMenu">
             <ul class="navlist">
@@ -81,9 +88,15 @@
             <div id="homeMenuResponsive">
                 <ul id="ResponsiveMenuList">
     
+                    <a href="index.html" class="menuItemResponsive">
+                        <li class="listitemResponsive">
+                            Eléonore Dixon-Roche
+                        </li>
+                    </a>
+    
                     <a href="PortfolioEMDixonRoche.html" class="menuItemResponsive">
                         <li class="listitemResponsive">
-                            Home
+                            Portfolio Home
                         </li>
                     </a>
     
@@ -128,9 +141,7 @@
         <header>
 
             <h1 class="mainTitle">
-                Calculator Web-App & 
-                <br>
-                Chrome-Extension Case Study
+                Healthcare worker calendar calculator case study.
             </h1>
             <div class="underlineDivHeading"></div>
 
@@ -165,8 +176,7 @@
             </h3>
 
             <p class="description">
-                A calculator for helathcare workers to work out when their patients need to have a follow-up Depo-Provera injection appointment (birth
-                control).
+                A <b>web-app</b> and <b>chrome-extension</b> where nurses can copy and paste the patient follow-up date range directly into patients’ <b>electronic health records</b>.
             </p>
 
             <div class="underlineDiv"></div>
@@ -180,27 +190,13 @@
             </h3>
 
             <p class="description">
-                <b>End-to-end design</b> and <b>development</b>.
+                <b>End-to-end UX/UI Design, Product Design, Front and Backend Web Development.</b>.
             </p>
 
             <div class="underlineDiv"></div>
 
         </section>
 
-        <section class="sectionParts">
-
-            <h3>
-                Outcome
-            </h3>
-
-            <p class="description">
-                In the end, I built a <b>web-app</b> and <b>chrome-extension</b> where nurses can copy and paste the patient follow-up
-                date range directly into their forms.
-            </p>
-
-            <div class="underlineDiv"></div>
-
-        </section>
 
         <section class="sectionParts">
 
@@ -209,10 +205,7 @@
             </h3>
 
             <p class="description">
-                Nurses administering Depo-Provera need to look up the date range the patient needs to come back for
-                their follow-up injection. All nurses I spoke to and the nurses they knew, look up the date range on a
-                PDF of the Depo-Provera perpetual calendar in a table format, either printed out or online. Nurses look
-                up the dates multiple times a day, wasting a lot of time.
+                After hearing a nurse <b>complain</b> about a <b>repetitive</b> and <b>time-consuming process</b>, I interviewed other nurses about the same pain points. They said they hated having to look up the date range for patient follow-up injections of Depo-Provera using a printed or digital PDF from 1999. This PDF was sometimes laminated, sometimes not, and sometimes had to be looked up on the computer.
             </p>
 
             <div class="sectionImg">
@@ -227,7 +220,11 @@
             </div>
 
             <p class="description">
-                A nurse in passing complained about this time-consuming process. I saw the potential to create a <b>product</b> with an immediate <b>value proposition</b> for an <b>existing client base</b>–a simple calculator replacing the printout shared by nurses or looking up the PDF online.
+                Nurses had numerous patients throughout the day, and they said it was annoying to be always looking for the PDF or online. Each time they looked up dates throughout the day, the process felt <b>frustrating</b> and <b>inefficient</b>. They could not believe an app or website did not already exist to solve this, and the app that did exist did not satisfy their needs.
+            </p>
+
+            <p class="description">
+                I saw the potential to create a <b>product</b> with an immediate <b>value proposition</b> for an existing client base–a web-based calculator to replace the PDF.
             </p>
 
             <div class="underlineDiv"></div>
@@ -241,31 +238,29 @@
         <section class="sectionParts">
 
             <h3>
-                Competitor Research
+                Competitive Research
             </h3>
 
             <p class="description">
-                There are two competing products:
+                I discovered two competing products:
             </p>
 
             <ol class="numberedList">
                 <li>
-                    the perpetual calendar PDF created by <i>Pharmacia & Upjohn Company</i>, creators of Depo-Provera; and
+                    The original PDF from <i>Pharmacia & Upjohn Company</i>, creators of Depo-Provera.
                 </li>
                 <li>
-                    "Depo calendar" available on the Apple Store.
+                    The “Depo calendar” app available on the Apple Store.
                 </li>
             </ol>
 
 
             <h4 class="subSubHeading">
-                <b>Competitor #1</b>
+                <b>Analysis of Competitor #1: The Original PDF</b>
             </h4>
 
             <p class="description">
-                The perpetual calendar PDF created by <i>Pharmacia & Upjohn Company</i> PDF is a two-sided printout of a table with a line for each date of the
-                year with the corresponding date range. It is the most common method for finding the date range
-                currently used by nurses.
+                The perpetual calendar PDF created by <i>Pharmacia & Upjohn Company</i> is a two-sided printout of a table with a line for each date of the year with the corresponding date range. It is the most widespread method currently used by nurses.
             </p>
 
             <p class="description">
@@ -274,7 +269,7 @@
 
             <ul id="planList">
                 <li class="bulletNumberedLists">
-                    Does not require any technology.
+                    If printed out, does not require any technology.
                 </li>
             </ul>
 
@@ -284,24 +279,26 @@
 
             <ul id="planList">
                 <li class="bulletNumberedLists">
-                    Nurses waste time finding the PDF either online or the shared printout.
+                    Wasted time searching for the physical shared printout or online PDF.
                 </li>
                 <li class="bulletNumberedLists">
-                    Scanning the table wastes time.
+                    The table was not easy to navigate and scanning it felt like wasted time.
                 </li>
                 <li class="bulletNumberedLists">
-                    Although they can copy and paste the date into the patient forms from the online PDF, they have to add the year.
+                    Although the date could be copied and pasted into patient forms from the online PDF, they had to add the year manually.
                 </li>
             </ul>
 
             <h4 class="subSubHeading">
-                <b>Competitor #2</b>
+                <b>Analysis of Competitor #2: The iPhone app</b>
             </h4>
 
             <p class="description">
-                In the "Depo calendar" app, the user inputs the injection date and gets corresponding dates for their
-                follow-up appointment. It is only available to Apple users via the Apple Store and has 3.3 stars based
-                on four ratings over five years.
+                The “Depo calendar” app had a 3.3 out of 4-star rating over five years.
+            </p>
+
+            <p class="description">
+                The user input the injection date and received the corresponding date for their follow-up appointment.
             </p>
 
             <div class="sectionImg">
@@ -321,11 +318,7 @@
 
             <ul id="planList">
                 <li class="bulletNumberedLists">
-                    Available on the Apple Store.
-                </li>
-                <li class="bulletNumberedLists">
-                    Provides a calculation of how many weeks and days since the last injection based on inputting the
-                    date of the previous injection and today's date.
+                    Calculated how many weeks and days since the last injection after inputting the previous injection date and today’s date.
                 </li>
             </ul>
 
@@ -335,50 +328,18 @@
 
             <ul id="planList">
                 <li class="bulletNumberedLists">
-                    <b>UX</b> is not intuitive.
+                    Unintuitive <b>UX</b>.
                 </li>
                 <li class="bulletNumberedLists">
-                    <b>UI</b> is outdated.
+                    Outdated <b>UI</b>.
                 </li>
                 <li class="bulletNumberedLists">
-                    User can't copy and paste the date range in one go into a patient form and is not in the preferred
-                    format.
+                    User couldn’t copy and paste the date range in the preferred format into a patient’s form.
                 </li>
                 <li class="bulletNumberedLists">
-                    Provides a lot of unnecessary information.
+                    Provided unnecessary information.
                 </li>
             </ul>
-
-
-            <div class="underlineDiv"></div>
-
-        </section>
-
-
-
-        <!-- Areas to Improve -->
-
-        <section class="sectionParts">
-
-            <h3>
-                Areas to Improve
-            </h3>
-
-            <p class="description">
-                Three main areas of improvement would <b>boost the product's </b> chance of <b>gaining market traction</b>:
-            </p>
-
-            <ol class="numberedList">
-                <li class="bulletNumberedLists">
-                    <b>decrease search time</b>;
-                </li>
-                <li class="bulletNumberedLists">
-                    <b>increase access</b>; and
-                </li>
-                <li class="bulletNumberedLists">
-                    <b>UI simplification</b>.
-                </li>
-            </ol>
 
 
             <div class="underlineDiv"></div>
@@ -396,48 +357,179 @@
             </h3>
 
             <p class="description">
-                <b>Analysis of the feedback</b> from local nurses showed a universal consensus. They needed a simple calculator where they put in the date of the injection and were given the date range in a particular format they could copy and paste into their patients' forms.
+                None of the nurses I spoke with had tried the Depo calendar app.
             </p>
 
-            <p class="description">
-                None of the nurses I spoke to used the Depo calendar app. They all used and shared laminated PDFs. They
-                said it was annoying to be always looking for the PDF or online. Each time they looked up dates
-                throughout the day, the process was frustrating and inefficient. They could not believe an app or
-                website did not already exist that did this, and the app that did exist did not satisfy their needs.
-            </p>
-
-            <div class="sectionImg">
-                
-                <p class="caption">
-                    Text from nurse
-                </p>
-
-                <img class="SmallPortfolioImages" src="images/Portfolio/Calendar/Anecdote.jpg">
-                
-
-            </div>
+            <ul id="planList">
+                <li class="bulletNumberedLists">
+                    Not all of them had iPhones.
+                </li>
+                <li class="bulletNumberedLists">
+                    They didn’t want to use their personal phones during patient appointments.
+                </li>
+            </ul>
 
             <p class="description">
-                <b>Researching</b> nurses' methods of looking up the date range and what they did with the date range, a couple of solutions immediately became apparent.
-            </p>
-
-            <p class="description">
-                The <b>user goal</b> of looking up the date of the injection is to input the date range of the follow-up appointment into patient forms on their computer. Ideally, they do not need their phone, and they can copy and paste in one go date range directly into the patient form.
-            </p>
-
-            <p class="description">
-                Although the nurses wanted an app as their solution, in reality, they just needed a way to access the calculator while they were on their computer. <b>Ideation</b> led me to conclude a <b>web-app</b> and <b>Google chrome-extension</b> would best suit their needs. The chrome-extension idea came from <b>user research</b> on the nurses of what browsers they and their peers use. Although all I spoke to use Google Chrome, it would be unreasonable to extrapolate this to the entire user population. Hence, the need for an additional web-app available across platforms.
-            </p>
-
-            <p class="description">
-                As a <b>healthcare product</b>, I had to ascertain whether there would be any potential HIPPA issues. The calculator
-                would not have any HIPPA hurdles since no patient data was stored or entered, only generic dates.
+                Analysis of the feedback from local nurses showed a universal consensus. They needed a simple calculator where they entered the injection date and received the date range in a particular format they could copy and paste into their patients' forms.
             </p>
 
             <div class="underlineDiv"></div>
 
         </section>
 
+
+        <!-- User Objectives -->
+
+        <section class="sectionParts">
+
+            <h3>
+                User Objectives
+            </h3>
+
+            <p class="description">
+                The <b>end users’</b> goals were to:
+            </p>
+
+            <ol class="numberedList">
+                <li>
+                    Input the date of the injection.
+                </li>
+                <li>
+                    Receive a date range for the follow-up appointment.
+                </li>
+                <li>
+                    Add the date range directly into the patient’s electronic health record.
+                </li>
+            </ol>
+
+            <p class="description">
+                Although the nurses liked the idea of an app-based solution, they really needed a way to access the calculator while they were on their computer.
+            </p>
+
+            <p class="description">
+                By researching how nurses were looking up and saving the date range, a couple of solutions immediately became apparent.
+            </p>
+
+            <p class="description">
+                Ideation led me to conclude that two solutions would best solve their problem:
+            </p>
+
+            <ol class="numberedList">
+                <li>
+                    A web-app.
+                </li>
+                <li>
+                    A Google Chrome extension.
+                </li>
+            </ol>
+
+            <p class="description">
+                The Chrome extension idea came from what browsers the nurses and their peers used. Although everyone I spoke to used Google Chrome, it was unreasonable to extrapolate this to the entire user population. Hence, the need for an additional cross-platform web app.
+            </p>
+
+            <p class="description">
+                As a healthcare product, I also had to ascertain whether there would be any potential HIPPA issues. Since no patient data was stored or entered, only generic dates, I concluded that the calculator didn’t have any HIPPA hurdles.
+            </p>
+
+            <div class="underlineDiv"></div>
+
+        </section>
+
+
+        <!-- Designer Objectives -->
+
+        <section class="sectionParts">
+
+            <h3>
+                Designer Objectives
+            </h3>
+
+            <p class="description">
+                Four main areas of improvement would boost the product’s chance of <b>gaining widespread adoption</b>:
+            </p>
+
+            <ol class="numberedList">
+                <li>
+                    <b>Increase access.</b>
+                </li>
+                <li>
+                    <b>Decrease date search time.</b>
+                </li>
+                <li>
+                    <b>Enable copying and pasting dates into patient health records.</b>
+                </li>
+                <li>
+                    <b>Simplify UI.</b>
+                </li>
+            </ol>
+            
+
+            <div class="underlineDiv"></div>
+
+        </section>
+
+
+        <!-- Product Solution -->
+
+        <section class="sectionParts">
+
+            <h3>
+                Product Solution
+            </h3>
+
+            <p class="description">
+                A mobile-optimized web app and Chrome extension where nurses could copy and paste follow-up date ranges directly into patients’ electronic health records using their computer browser.
+            </p>
+            
+
+            <div class="underlineDiv"></div>
+
+        </section>
+
+
+        <!-- Brand Design -->
+
+        <section class="sectionParts">
+
+            <h3>
+                Brand Design
+            </h3>
+
+            <p class="description">
+                Leveraging my scientific illustration experience with The Smithsonian Institute (<a href="/creative.html">example illustrations</a>), I first created the <b>logo</b> to inform the rest of the <b>brand</b>. The two main words associated with the calculator are "injection" and "date." Lucky for me, these are two visual elements: a hypodermic needle and a calendar.
+            </p>
+
+            <p class="description">
+                My two competitors did not have clear branding. It was a clear opportunity for my product to stand out. By <b>branding my product</b> and therefore giving it an <b>identity</b>, it would have <b>cross-platform recognition</b>.
+            </p>
+
+            <p class="description">
+                I created the <b>logo</b> first, informing the rest of the <b>design brand</b>. The two main words associated with the
+                calculator are "injection" and "date." Luckily for me, these are two visual elements: a hypodermic
+                needle and a calendar.
+            </p>
+
+            <p class="description">
+                The main <b>design requirement</b> was "simple," but I felt a close second was "approachable." I made sure the
+                needle looked as friendly as possible and used a calendar representation. During the <b>design iteration</b>, I
+                saw a neat opportunity for the injection drop to represent the day of the injection.
+            </p>
+
+            <div class="sectionImg">
+                
+                <p class="caption">
+                    Logo design iterations
+                </p>
+
+                <img class="PortfolioImages" src="images/Portfolio/Calendar/Perpetual_calendar_icon_process.jpg">
+                
+
+            </div>
+            
+
+            <div class="underlineDiv"></div>
+
+        </section>
 
 
         <!-- UX Design -->
@@ -449,49 +541,29 @@
             </h3>
 
             <p class="description">
-                A nurse volunteered a <b>mockup</b> of their product design vision.
+                A nurse volunteered a <b>mockup</b> of their <b>product design vision</b>.
             </p>
-
-            <div class="sectionImg">
-                
-                <p class="caption">
-                    Post-it note design by nurse
-                </p>
-
-                <img class="PortfolioImages" src="images/Portfolio/Calendar/Client_vision.jpg">
-                
-
-            </div>
 
             <p class="description">
-                Using the <b>mockup</b> as a jumping-off point, I distilled out the <b>design essentials</b>. Everything
-                needed to be immediately <b>viewable</b> and <b>accessible</b>, having the least amount of information and words
-                possible on the screen while still <b>achieving the user end goal</b>–date range of follow-up appointment.
+                Using the <b>mockup</b> as a jumping-off point, I distilled out the <b>design essentials</b>.
             </p>
-
-            <div class="sectionImg">
-                
-                <p class="caption">
-                    Page of working through UX 
-                </p>
-
-                <img class="PortfolioImages" src="images/Portfolio/Calendar/Braindump.jpeg">
-                
-
-            </div>
 
             <p class="description">
-                To <b>achieve the user goal</b>–getting a date range–the on-screen information needed to have:
+                Everything needed to be immediately viewable and <b>accessible</b> on one screen with the least amount of information and words possible while still <b>achieving the user end-goals</b>.
             </p>
 
-            <ul id="planList">
-                <li class="bulletNumberedLists">
-                    injection date; and
+            <p class="description">
+                To <b>achieve the user goal</b> of getting a date range, the on-screen information needed to have:
+            </p>
+
+            <ol class="numberedList">
+                <li>
+                    <b>Injection date.</b>
                 </li>
-                <li class="bulletNumberedLists">
-                    next injection date range.
+                <li>
+                    <b>Next injection date range.</b>
                 </li>
-            </ul>
+            </ol>
 
             <div class="underlineDiv"></div>
 
@@ -522,33 +594,7 @@
                 
 
             </div>
-
-            <p class="description">
-                My two competitors did not have clear branding. It was a clear opportunity for my product to stand out. By <b>branding my product</b> and therefore giving it an <b>identity</b>, it would have <b>cross-platform recognition</b>.
-            </p>
-
-            <p class="description">
-                I created the <b>logo</b> first, informing the rest of the <b>design brand</b>. The two main words associated with the
-                calculator are "injection" and "date." Luckily for me, these are two visual elements: a hypodermic
-                needle and a calendar.
-            </p>
-
-            <p class="description">
-                The main <b>design requirement</b> was "simple," but I felt a close second was "approachable." I made sure the
-                needle looked as friendly as possible and used a calendar representation. During the <b>design iteration</b>, I
-                saw a neat opportunity for the injection drop to represent the day of the injection.
-            </p>
-
-            <div class="sectionImg">
-                
-                <p class="caption">
-                    Logo design iterations
-                </p>
-
-                <img class="PortfolioImages" src="images/Portfolio/Calendar/Perpetual_calendar_icon_process.jpg">
-                
-
-            </div>
+            
 
             <p class="description">
                 Starting with a <b>mobile-first design</b> in grayscale, I then added the chosen color scheme, extrapolating to
@@ -623,7 +669,7 @@
             </p>
 
             <p class="description">
-                Once I had a <b>low-fidelity prototype</b>, I shared it with my <b>tester group validating product concept</b> before styling.
+                Once I had a <b>low-fidelity prototype</b>, I shared it with my <b>test group</b> to <b>validate the product concept</b> before styling.
             </p>
 
             <div class="underlineDiv"></div>
@@ -639,25 +685,13 @@
             </h3>
 
             <p class="description">
-                A problem glared in the <b>high-fidelity prototype</b>. It failed to achieve one of the original <b>user goals</b>: copy and paste the date range in one go. It was not possible on the <b>mobile design</b>.
+                To make sure the <b>user</b> could copy and paste the date range in one step, I made the <b>layout responsive</b> where the date range went on one line once there was enough screen space to do so.
             </p>
 
             <p class="description">
-                <b>I fixed this problem by making the layout responsive</b>. The date range went on one line once there was enough screen space to do so. The title bar looked crammed on a wider screen, so that also got put into one line on the desktop.
+                The title bar looked crammed on a wider screen, so that also got put into one line on the desktop.
             </p>
 
-            <div class="sectionImgEnd">
-                
-                <p class="caption">
-                    Responsive site design
-                </p>
-
-                <img class="WidePortfolioImages" src="images/Portfolio/Calendar/Live_site_desktop.jpg">
-
-                <img class="NarrowPortfolioImages" src="images/Portfolio/Calendar/Live_site_mobile.jpg">
-                
-
-            </div>
 
             <div class="underlineDiv"></div>
 
@@ -672,7 +706,7 @@
             </h3>
 
             <p class="description">
-                The <b>UI feedback</b> was favorable. However, there was one <b>UX</b> suggestion and one <b>development</b> issue.
+                The <b>UX</b> feedback was favorable. However, there was one <b>feature</b> suggestion and one <b>development</b> issue.
             </p>
 
             <div class="sectionImg">
@@ -691,11 +725,11 @@
             </p>
 
             <p class="description">
-                <b>User testing</b> occurred in 2020, a leap year, and I was not accounting for February 29th. During my <b>QA and research</b>, I discovered my <b>competitors' products</b> did not account for it either. Since this was a calculation, it would not only be necessary to correct but would mean my calculator would be the only 100% accurate product.
+                <b>User testing</b> occurred in 2020, a leap year, and I had not accounted for February 29th. During my QA and research, I discovered that both of my <b>competitors' products</b> did not account for it either. This meant that my calculator would be the only 100% accurate product.
             </p>
 
             <p class="description">
-                Leap years are part of the <b>Moment.js API</b>, so it would be possible to correct. Below is the correct calculation:
+                Leap years are part of the <b>Moment.js API</b>, so it would be possible to correct. Below is the corrected calculation:
             </p>
 
             <div id="topdate" class="dateCalc">
@@ -729,7 +763,7 @@
         <section class="sectionParts">
 
             <h3>
-                Beta user testing
+                Beta User Testing
             </h3>
 
             <p class="description">
@@ -762,11 +796,11 @@
         <section class="sectionParts">
 
             <h3>
-                Release and Results
+                Product Release and Outcome
             </h3>
 
             <p class="description">
-                All through <b>word-of-mouth marketing</b>, in four and half months, both the <b>web-app</b> and <b>chrome-extension</b> each has <b>100+ returning</b> visitors.
+                Initially, end users were healthcare workers at a local hospital to determine when their patients needed to have a follow-up Depo-Provera birth control injection appointment. In four and a half months and all through <b>word-of-mouth marketing</b>, both the <b>web-app</b> and <b>chrome-extension</b> each had <b>250+ returning weekly visitors</b>.
             </p>
 
             <div class="sectionImgEnd">
@@ -783,6 +817,10 @@
                 </p>
 
                 <img class="PortfolioImages" src="images/Portfolio/Calendar/GoogleAnalytics.jpg">
+
+                <p class="description">
+                    As of March 2021, 250 healthcare workers used it daily internationally.
+                </p>
 
                 <p class="caption">
                     Depo-Provera perpetual calendar calculator 
@@ -823,7 +861,7 @@
     
         <div>
             <p id="footerEmail">Built from scratch by Eléonore Dixon-Roche</p>
-            <p id="copyright">Copyright © 2020 E.M.Dixon-Roche All Rights Reserved</p>
+            <p id="copyright">Copyright © 2021 E.M.Dixon-Roche All Rights Reserved</p>
         </div>
 
     </footer>

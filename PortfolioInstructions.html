@@ -30,15 +30,22 @@
 
         <section id="menuSection">
     
-        <div id="homeMenu">
-            <ul>
-                <li class="listitem">
-                    <a href="PortfolioEMDixonRoche.html" class="menuItem">
-                        Eléonore Dixon-Roche
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div id="homeMenu" class="homeMenuPort">
+                <ul >
+                    <li class="listitem">
+                        <a href="index.html" class="menuItem">
+                            Eléonore Dixon-Roche
+                        </a>
+                    </li>
+                </ul>
+                <ul  id="portMainMenu">
+                    <li class="listitem">
+                        <a href="PortfolioEMDixonRoche.html" class="menuItem">
+                            Portfolio Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
     
         <div id="mainMenu">
             <ul class="navlist">
@@ -81,9 +88,15 @@
             <div id="homeMenuResponsive">
                 <ul id="ResponsiveMenuList">
     
+                    <a href="index.html" class="menuItemResponsive">
+                        <li class="listitemResponsive">
+                            Eléonore Dixon-Roche
+                        </li>
+                    </a>
+    
                     <a href="PortfolioEMDixonRoche.html" class="menuItemResponsive">
                         <li class="listitemResponsive">
-                            Home
+                            Portfolio Home
                         </li>
                     </a>
     
@@ -128,9 +141,7 @@
         <header>
 
             <h1 class="mainTitle">
-                Instruction Design & Copy  
-                <br>
-                Evolution in Interactive Ebooks
+                K-5 interactive ebooks case study.
             </h1>
             <div class="underlineDivHeading"></div>
 
@@ -161,66 +172,50 @@
         <section class="sectionParts">
 
             <h3>
+                Role
+            </h3>
+
+            <p class="description">
+                <b>UX Design, Product Management, Instructional Copywriting</b>.
+            </p>
+
+            <div class="underlineDiv"></div>
+
+        </section>
+
+        <section class="sectionParts">
+
+            <h3>
                 Product
             </h3>
 
             <p class="description">
-                Instruction use in K-5 interactive science ebooks via pop-ups and embedded text.
+                A series of thirteen interactive K-5 science ebooks with pop-ups, graphics, embedded text, and more.
             </p>
 
             <div class="underlineDiv"></div>
 
         </section>
 
-        <section class="sectionParts">
-
-            <h3>
-                My Role
-            </h3>
-
-            <p class="description">
-                <b>UX design</b> and <b>copy</b>.
-            </p>
-
-            <div class="underlineDiv"></div>
-
-        </section>
 
         <section class="sectionParts">
 
             <h3>
-                Outcome
+                Opportunity
             </h3>
 
             <p class="description">
-                The results were instructions embedded in the narrative text as well as dedicated pop-up instructions. The instructions now focus on the act of interacting with the simulation without giving any hints to the answers.
+                90% of my time at conferences was spent <b>observing</b> and interacting with science teacher attendees while gathering <b>qualitative research</b> on how they used our products.
             </p>
-
-            <div class="underlineDiv"></div>
-
-        </section>
-
-        <section class="sectionParts">
-
-            <h3>
-                The Opportunity
-            </h3>
 
             <p class="description">
-                <b>90% of my time at conferences, I spent gathering qualitative research, interacting and observing</b> attendees interact with our product. <b>Research discovery</b> showed how instructions could be clarified, simultaneously easing the narrative flow. Although adult conference attendees were not actively struggling to understand the instructions, they did take more time than I thought necessary as an adult, indicating a child–the <b>target demographic</b>–would have even more trouble. I saw this as an opportunity to clarify the instructions and make them more seamless in the story's narrative.
+                Adult conference attendees didn’t struggle to understand the science book content because they were science teachers. But I did identify times when it took longer to <b>navigate</b> the ebook <b>UI</b> than I thought it should for an adult. This indicated that a child, the <b>target demographic</b>, would have even more difficulty.
             </p>
 
-            <div class="sectionImgEnd">
-                
-                <p class="caption">
-                    Tablets at NSTA conference where teachers would interact with the ebooks
-                </p>
+            <p class="description">
+                I used this opportunity to uncover how to <b>clarify instructions</b> while simultaneously easing the <b>narrative flow</b>.
+            </p>
 
-                <img class="PortfolioImages" src="images/Portfolio/Instructions/Conference_Store.jpg">
-
-                
-
-            </div>
 
             <div class="underlineDiv"></div>
 
@@ -233,17 +228,29 @@
 <section class="sectionParts">
 
     <h3>
-        Pilot Ebook
+        eBook Prototype
     </h3>
 
     <p class="description">
-        The pilot book’s narrative text included interactivity instructions, but interactive elements were not inherently obvious, obstructing the <b>user flow</b>, and <b>design critiques</b> established the legacy hand icon was used inconsistently.
+        The ebook prototype’s narrative text included interactivity instructions. Through <b>design critiques</b> with <b>focus groups</b>, I uncovered that the <b>user flow</b> and the overarching storyline were impeded by the following:
     </p>
+
+    <ul id="planList">
+        <li class="bulletNumberedLists">
+            narrative text instructions were confusing and easily missed.
+        </li>
+        <li class="bulletNumberedLists">
+            narrative text instructions were also unnecessary for <b>repetitive interactive elements</b>.
+        </li>
+        <li class="bulletNumberedLists">
+            using the hand <b>icon</b> consistently caused unhelpful visual clutter, dated the <b>UI</b>, and users still had to rely on in-text instructions.
+        </li>
+    </ul>
 
     <div class="sectionImgEnd">
                 
         <p class="caption">
-            Pilot ebook with legacy hand-icon 
+            Pilot ebook with outdated hand icon at the bottom right 
         </p>
 
         <img class="PortfolioImages" src="images/Portfolio/Instructions/Original_handIcon.jpg">
@@ -263,23 +270,15 @@
         <section class="sectionParts">
 
             <h3>
-                First In Series
+                First Published eBook Iteration
             </h3>
 
             <p class="description">
-                <b>Qualitative data analysis from a focus group</b> determined room for improvement of the instructions. <b>Based on the user feedback, I brainstormed</b> how to improve the instruction implementation ensuring the user could check what they were supposed to do on each page.
+                For our first published ebook, I <b>brainstormed</b> how to solve the instruction implementation problems that were uncovered with the prototype.
             </p>
 
             <p class="description">
-                Initially, instructions would only be within the narrative text. However, too many instructions would impede the <b>user flow</b> and narrative and may not be necessary for repetitive interactive elements.
-            </p>
-
-            <p class="description">
-                The focus group indirectly uncovered even using the hand-icons consistently would present a host of issues: unhelpful visual clutter, quickly date the UI, and fully rely on instructions in the text– which as previously determined would impede the narrative.
-            </p>
-
-            <p class="description">
-                Combining <b>instruction and interaction design</b>, I created an interactive hand icon–signifying touch–with a pop-up, following the <b>style guide</b> for interactive elements. In the pop-up, instructions and would appear on every interactive page. For the least impact on <b>visual design</b>, the pop-up button is placed next to the page number. The page number itself could have been the pop-up element, but since K-5 students were the <b>target audience</b>, <b>UI intuitiveness out-weighed style</b>.
+                I came up with a pop-up hand icon that signified touch and followed the <b>style guide</b> for <b>interactive design elements</b>.
             </p>
 
             <div class="sectionImgEnd">
@@ -290,9 +289,16 @@
 
                 <img class="PortfolioImages" src="images/Portfolio/Instructions/Popup_location.jpg">
         
-                
-        
             </div>
+
+            <p class="description">
+                To <b>minimally</b> impact the <b>visual design</b>, I placed the pop-up hand button next to the page number. The page number itself could have been the pop-up element, but since K-5 students were the <b>target audience</b>, <b>UI intuitiveness out-weighed style</b>.
+            </p>
+
+            <p class="description">
+                All interactive elements needed to follow the same styling for users to recognize their functionality. Through <b>user testing</b> I found bright gradients were more easly recognized as interactive than flat and or softer colors.
+            </p>
+
 
             <div class="underlineDiv"></div>
 
@@ -305,21 +311,21 @@
         <section class="sectionParts">
 
             <h3>
-                Sixth In Series
+                Seventh Published eBook Iteration
             </h3>
 
             <p class="description">
-                Based on <b>evaluative research</b> done at conferences, after the release of the sixth ebook, I implemented two changes.
+                Based on <b>evaluative research</b> done at future conferences, I implemented two additional changes.
             </p>
 
             <p class="description">
-                    I widened the width of the pop-ups' boxes, allowing single sentence instructions to limit scanning impulses (as it is important the user read all of the instructions), and be easier to read for K-5 students.
+                To reduce the impulse to scan or miss instructions, I widened the width of pop-up instruction boxes. It also reduced the frequency of covering other page text.
             </p>
 
                 <div class="sectionImg">
                 
                     <p class="caption">
-                        Before: pop-up boxes were often narrow covering main screen text and decreasing legibility 
+                        Before: pop-up boxes covered the main screen’s text, decreasing legibility 
                     </p>
 
                     <img class="PortfolioImages" src="images/Portfolio/Instructions/Narrow_popup_box.jpg">
@@ -327,7 +333,7 @@
                     
 
                     <p class="caption">
-                        After: pop-up boxes were widened not blocking main screen text and allowing easier legibilty–it is important the user read all the instructions carefully 
+                        After: pop-up boxes were easier to read and didn’t block main screen text 
                     </p>
 
                     <img class="PortfolioImages" src="images/Portfolio/Instructions/Wide_popupbox.jpg">
@@ -337,13 +343,17 @@
                 </div>
 
                 <p class="description">
-                    I removed any instructions insinuating right and wrong answers or extraneous information already covered in the narrative text in the instruction pop-up.
+                    I also revised the text for <b>positive reinforcement</b> so that text didn’t imply right or wrong answers, just instructions to follow.
+                </p>
+
+                <p class="description">
+                    Narrative text also sometimes repeated pop-up instructions, increasing reading time. To reduce text duplication, I cross-referenced narrative text and pop-up instructions.
                 </p>
 
                 <div class="sectionImg">
                 
                     <p class="caption">
-                        Before: pop-up box instructions had extraneous text increasing reading time. In this image the narrative text says to match the objects in the shadow, therefore it is not entirely necssary in the pop-up box instructions. Simply saying "Drag the object onto the tables" would be enough.  
+                        Before: the narrative text said, “match each of these things to its shadow” and the pop-up box instructions said, “draft the object into the circle on the table with the matching shadow”. It would have been better to say, “Drag the object onto the tables” in only the pop-up instructions.  
                     </p>
 
                     <img class="PortfolioImages" src="images/Portfolio/Instructions/Insinuation.jpg">
@@ -351,7 +361,7 @@
                     
 
                     <p class="caption">
-                        After: pop-up box instructions did not have repetitive information covered in the narrative text  
+                        After: narrative text did not repeat information covered in the pop-up box instructions  
                     </p>
 
                     <img class="PortfolioImages" src="images/Portfolio/Instructions/No_insinuation.jpg">
@@ -362,15 +372,7 @@
             
 
             <p class="description">
-                These changes sped up and increased comprehension enough of conference attendees to mark a difference.
-            </p>
-
-            <p class="description">
-                However, the frequency and <b>style</b> of embedded instructions in the narrative were still inconsistent between ebooks.
-            </p>
-
-            <p class="description">
-                There was still room for improvement in the <b>instructional design</b>. The next obstacle I tackled was making instructions so easy to find and understand if someone navigated to any page, interactivity and associated instructions would be obvious.
+                These changes increased both the reading speed and <b>comprehension</b> of conference attendees markedly.
             </p>
 
             <div class="underlineDiv"></div>
@@ -385,17 +387,21 @@
  <section class="sectionParts">
 
             <h3>
-                Sixth To Thirteenth in Series
+                Seventh to Thirteenth Published eBook Iterations
             </h3>
 
             <p class="description">
-                From the sixth to the thirteenth release, I <b>standardized</b> embedded instructions–<b>copy</b> I wrote and integrated. General instructions became part of the story not added on at the end of the narrative. The pop-up instructions told the user exactly what to do without giving any hints to correct answers.
+                From the sixth to the thirteenth release, focused on <b>instructional design</b> by making the instructions so easy to find and understand that if the user navigated to any page, the interactivity and associated instructions were obvious.
+            </p>
+
+            <p class="description">
+                First, I <b>standardized</b> the text for embedded instructions. General instructions became part of the story instead of added at the end of the narrative. The pop-up instructions also told the user exactly what to do without giving any hints to the correct answers.
             </p>
 
             <div class="sectionImgEnd">
                 
                 <p class="caption">
-                    After: pop-up box instructions pertained to interactivity only and instructions were embedded seemlessly into the narrative text   
+                    After: narrative text included the general instructional objective and the pop-up box instructions included how to achieve the objective through the interactive game   
                 </p>
                 
                 <img class="PortfolioImages" src="images/Portfolio/Instructions/Final_Instructions.jpg">
@@ -409,24 +415,26 @@
         </section>
 
 
+        <!-- Outcome -->
 
-<!-- Results -->
+ <section class="sectionParts">
 
-        <section class="sectionParts">
+    <h3>
+        Outcome
+    </h3>
 
-            <h3>
-                Results
-            </h3>
+    <p class="description">
+        Due to budget constraints, we could not retroactively update previous ebooks.
+    </p>
 
-            <p class="description">
-                Due to budget constraints, we could not retroactively update previous books' instructions. However, at conferences, I was able to <b>evaluate</b> which books invoked the most questions and which ones garnered the least–later releases created the least questions.
-            </p>
+    <p class="description">
+        However, by quantifying which books invoked the most questions and which ones garnered the least, I was able to <b>validate</b> that later releases created less and less questions.
+    </p>
 
-            
 
-        </section>
+    <div class="underlineDiv"></div>
 
-        </div>
+</section>
 
 
     <!-- Footer -->
@@ -452,7 +460,7 @@
     
         <div>
             <p id="footerEmail">Built from scratch by Eléonore Dixon-Roche</p>
-            <p id="copyright">Copyright © 2020 E.M.Dixon-Roche All Rights Reserved</p>
+            <p id="copyright">Copyright © 2021 E.M.Dixon-Roche All Rights Reserved</p>
         </div>
 
     </footer>
